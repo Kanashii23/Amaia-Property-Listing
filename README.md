@@ -35,7 +35,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-Here is my Output of my Amaia-Property-Listing:
+## Output of Amaia-Property-Listing:
 ![image](https://github.com/user-attachments/assets/ed3707c3-dfdd-4ba3-9e9a-b5ebe7fb5580)
 
 
