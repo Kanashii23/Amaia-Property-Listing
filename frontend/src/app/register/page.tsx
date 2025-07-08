@@ -59,10 +59,10 @@ export default function Register() {
   };
 
   return (
-    <div className={`min-h-screen flex items-center justify-center bg-[#007E66] px-4 ${montserrat.className}`}>
+    <div className={`min-h-screen flex items-center justify-center bg-[#007E66] px-4 sm:px-6 lg:px-8 ${montserrat.className}`}>
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-2xl shadow-lg max-w-md w-full space-y-5"
+        className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg max-w-md w-full space-y-5"
       >
         {/* Matchmo Logo */}
         <div className="flex justify-center">
@@ -75,8 +75,8 @@ export default function Register() {
           <label className="text-sm font-semibold text-gray-700">First Name</label>
           <input
             type="text"
-            className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none 
-                       placeholder-gray-300 text-black"
+            className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-sm 
+              placeholder-gray-300 text-black focus:outline-none focus:ring-0 focus:border-gray-400"
             placeholder="Juan"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
@@ -88,8 +88,8 @@ export default function Register() {
           <label className="text-sm font-semibold text-gray-700">Last Name</label>
           <input
             type="text"
-            className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none 
-                       placeholder-gray-300 text-black"
+            className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-sm 
+              placeholder-gray-300 text-black focus:outline-none focus:ring-0 focus:border-gray-400"
             placeholder="Dela Cruz"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
@@ -102,8 +102,9 @@ export default function Register() {
           <div className="relative">
             <input
               type={showPass ? 'text' : 'password'}
-              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none 
-                         placeholder-gray-300 text-black"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-sm 
+                placeholder-gray-300 text-black focus:outline-none focus:ring-0 focus:border-gray-400"
+              placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -122,8 +123,9 @@ export default function Register() {
           <label className="text-sm font-semibold text-gray-700">Confirm Password</label>
           <input
             type={showPass ? 'text' : 'password'}
-            className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none 
-                       placeholder-gray-300 text-black"
+            className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-sm 
+              placeholder-gray-300 text-black focus:outline-none focus:ring-0 focus:border-gray-400"
+            placeholder="Confirm Password"
             value={confirm}
             onChange={(e) => setConfirm(e.target.value)}
             required
