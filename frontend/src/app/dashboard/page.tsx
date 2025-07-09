@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import jwtDecode from 'jwt-decode';
+import { jwtDecode } from 'jwt-decode';
 import PropertyCard from '../components/PropertyCard';
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';

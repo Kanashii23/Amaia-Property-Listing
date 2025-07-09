@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import jwtDecode from 'jwt-decode'; 
+import { jwtDecode } from 'jwt-decode'; 
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
